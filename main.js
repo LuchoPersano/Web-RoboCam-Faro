@@ -33,7 +33,7 @@ function cambio(event) {
     }
 }
 function enviarConfig() {
-    fetch(urlBase + '/config?' + 'velocidad=' + document.querySelector('section.configuracione form input.velocidad').value + '&fadein=' + document.querySelector('section.configuracione form input.fadein').value + '&fadeout=' + document.querySelector('section.configuracione form input.fadeout').value)
+    fetch(urlBase + '/config?' + 'velocidad=' + document.querySelector('section.configuraciones form input.velocidad').value + '&fadein=' + document.querySelector('section.configuraciones form input.fadein').value + '&fadeout=' + document.querySelector('section.configuraciones form input.fadeout').value)
         .then(res => {
             if(res.status != 200) {
                 console.error(res.body)
