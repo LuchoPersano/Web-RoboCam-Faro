@@ -2,16 +2,16 @@ let content = `<div class="container">
     <section class="controles">
         <h2>Controles de la cámara</h2>
         <div class="controles_container section_container">
-            <button class="flecha arriba" onmousedown="moverServo('arriba')" onmouseup="pararServo('tilt')">
+            <button class="flecha arriba" onmousedown="moverServo('arriba')" onmouseup="pararServo('tilt')" ontouchstart="moverServo('arriba')" ontouchend="pararServo('tilt')">
                 <span class="material-symbols-outlined">arrow_drop_up</span>
             </button>
-            <button class="flecha derecha" onmousedown="moverServo('derecha')" onmouseup="pararServo('pan')">
+            <button class="flecha derecha" onmousedown="moverServo('derecha')" onmouseup="pararServo('pan')" ontouchstart="moverServo('derecha')" ontouchend="pararServo('pan')">
                 <span class="material-symbols-outlined">arrow_right</span>
             </button>
-            <button class="flecha abajo" onmousedown="moverServo('abajo')" onmouseup="pararServo('tilt')">
+            <button class="flecha abajo" onmousedown="moverServo('abajo')" onmouseup="pararServo('tilt')" ontouchstart="moverServo('abajo')" ontouchend="pararServo('tilt')">
                 <span class="material-symbols-outlined">arrow_drop_down</span>
             </button>
-            <button class="flecha izquierda" onmousedown="moverServo('izquierda')" onmouseup="pararServo('pan')">
+            <button class="flecha izquierda" onmousedown="moverServo('izquierda')" onmouseup="pararServo('pan')" ontouchstart="moverServo('izquierda')" ontouchend="pararServo('pan')">
                 <span class="material-symbols-outlined">arrow_left</span>
             </button>
         </div>
