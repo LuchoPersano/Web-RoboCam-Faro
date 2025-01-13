@@ -1,7 +1,5 @@
-let urlBase = "http://192.168.68.200/API/1.0"
-
 function moverServo(accion) {
-    fetch(urlBase + '/servo?accion=' + accion)
+    fetch('API/1.0/servo?accion=' + accion)
         .then(res => {
             if(res.status != 200) {
                 console.error(res.body)
@@ -9,20 +7,12 @@ function moverServo(accion) {
         })
 }
 function pararServo(servo) {
-    fetch(urlBase + '/servo?accion=parar&servo=' + servo)
+    fetch('API/1.0/servo?accion=parar&servo=' + servo)
         .then(res => {
             if(res.status != 200) {
                 console.error(res.body)
             }
         })
-}
-function actualizarIP() {
-    urlBase = 'http://'
-    campos = document.querySelectorAll('.ipInput_container input')
-    for(let i = 0; i < 3; i++) {
-        urlBase = urlBase + campos[i].value + '.'
-    }
-    urlBase = urlBase + campos[3].value + '/API/1.0'
 }
 function cambio(event) {
     let actual = event.target

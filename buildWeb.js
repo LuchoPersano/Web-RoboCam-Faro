@@ -1,14 +1,4 @@
 let content = `<div class="container">
-    <section class="ip">
-        <h2>IP de la placa NodeMCU 1.0</h2>
-        <div class="ipInput_container section_container">
-            <input type="number" class="1" value="192">
-            <input type="number" class="2" value="168">
-            <input type="number" class="3" value="68">
-            <input type="number" class="4" value="200">
-            <input type="button" class="actualizar" onclick="actualizarIP()" value="Actualizar">
-        </div>
-    </section>
     <section class="controles">
         <h2>Controles de la cámara</h2>
         <div class="controles_container section_container">
