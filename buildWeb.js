@@ -21,10 +21,10 @@ let content = `<div class="container">
         <form class="section_container">
             <label for="valocidad">Velocidad (%)</label>
             <div><input type="range" name="velocidadRange" class="velocidadRange" value="75" min="1" max="100" step="1" onchange="cambio(event)"><input type="number" name="velocidad" class="velocidad" value="75" min="1" max="100" onchange="cambio(event)"></div>
-            <label for="fadein">Tiempo de fade-in (ms)</label>
-            <div><input type="range" name="fadeinRange" class="fadeinRange" value="0" min="0" max="2000" step="100" onchange="cambio(event)"><input type="number" name="fadein" class="fadein" value="0" min="0" max="2000" step="100" onchange="cambio(event)"></div>
-            <label for="fadeout">Tiempo de fade-out (ms)</label>
-            <div><input type="range" name="fadeoutRange" class="fadeoutRange" value="0" min="0" max="2000" step="100" onchange="cambio(event)"><input type="number" name="fadeout" class="fadeout" value="0" min="0" max="2000" step="100" onchange="cambio(event)"></div>
+            <label for="fadein">Tiempo de fade-in (%)</label>
+            <div><input type="range" name="fadeinRange" class="fadeinRange" value="0" min="0" max="100" step="1" onchange="cambio(event)"><input type="number" name="fadein" class="fadein" value="0" min="0" max="100" step="1" onchange="cambio(event)"></div>
+            <label for="fadeout">Tiempo de fade-out (%)</label>
+            <div><input type="range" name="fadeoutRange" class="fadeoutRange" value="0" min="0" max="100" step="1" onchange="cambio(event)"><input type="number" name="fadeout" class="fadeout" value="0" min="0" max="100" step="1" onchange="cambio(event)"></div>
             <input type="button" value="Guardar" onclick="enviarConfig()">
         </form>
     </section>
